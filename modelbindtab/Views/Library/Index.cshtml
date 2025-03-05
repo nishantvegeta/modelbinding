@@ -1,0 +1,24 @@
+@model List<LibraryModel>
+
+<h1>Library</h1>
+<table class = "table">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Stall</th>
+        <th>Address</th>
+        <th>OpenDate</th>
+        <th>Email</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Stall</td>
+            <td>@item.Address</td>
+            <td>@item.OpenDate</td>
+            <td>@item.Email</td>
+        </tr>
+    }
+</table>
